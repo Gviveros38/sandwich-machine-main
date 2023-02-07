@@ -11,7 +11,7 @@ recipes = {
     },
     "medium": {
         "ingredients": {
-            "bread": 4,  ## slice
+            "bread": 4,  ## slices
             "ham": 6,  ## slice
             "cheese": 8,  ## ounces
         },
