@@ -6,7 +6,7 @@ from cashier import Cashier
 # Make an instance of other classes here
 resources = data.resources
 recipes = data.recipes
-sandwich_maker_instance = SandwichMaker[resources]
+sandwich_maker_instance = SandwichMaker(resources)
 cashier_instance = Cashier
 
 
@@ -14,6 +14,8 @@ cashier_instance = Cashier
 
 def main():
     ###  write the rest of the codes ###
+
+
     is_on = True
 
     while is_on:
@@ -26,8 +28,8 @@ def main():
         else:
             sandwich = recipes[choice]
             if sandwich_maker_instance.check_resources(sandwich["ingredients"]):
-                payment = sandwich_maker_instance.process_coins()
-                if sandwich_maker_instance.transaction_result(payment, sandwich["cost"]):
+                payment = cashier_instance.process_coins()
+                if cashier_instance.transaction_result(payment, sandwich["cost"]):
                     sandwich_maker_instance.make_sandwich(choice, sandwich["ingredients"])
 
 
