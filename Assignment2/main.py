@@ -7,7 +7,7 @@ from cashier import Cashier
 resources = data.resources
 recipes = data.recipes
 sandwich_maker_instance = SandwichMaker(resources)
-cashier_instance = Cashier
+cashier_instance = Cashier()
 
 
 
@@ -31,7 +31,6 @@ def main():
                 payment = cashier_instance.process_coins()
                 if cashier_instance.transaction_result(payment, sandwich["cost"]):
                     sandwich_maker_instance.make_sandwich(choice, sandwich["ingredients"])
-
 
 if __name__=="__main__":
     main()
