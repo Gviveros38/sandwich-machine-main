@@ -25,5 +25,5 @@ class Cashier:
             print(f"Here is ${change} in change")
             return True
         else:
-            print("Sorry thats not enough money. Money refunded")
+            print("Sorry that's not enough money. Money refunded")
             return False

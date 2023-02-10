@@ -5,11 +5,13 @@ class SandwichMaker:
 
     def check_resources(self, ingredients):
         #checks for ingredients and compares it to resources, false if ingredients is more than resources
-        if(ingredients>= self.machine_resources):
-            return False
-        else:
-            return True
+        for item in ingredients:
+            if ingredients[item] > self.machine_resources[item]:
+                print(f"Sorry insufficient {item}.")
+                return False
+        return True
 
     def make_sandwich(self, sandwich_size, order_ingredients):
-        self.sandwich_size = sandwich_size
-        self.order_ingredients = order_ingredients
+        for item in order_ingredients:
+            self.machine_resources[item] -= order_ingredients[item]
+        print(f"{sandwich_size} sandwich is ready.")
