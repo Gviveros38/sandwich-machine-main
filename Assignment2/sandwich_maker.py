@@ -14,4 +14,4 @@ class SandwichMaker:
     def make_sandwich(self, sandwich_size, order_ingredients):
         for item in order_ingredients:
             self.machine_resources[item] -= order_ingredients[item]
-            print(f"{sandwich_size} sandwich is ready. Bon appetit!")
+        print(f"{sandwich_size} sandwich is ready. Bon appetit!")
