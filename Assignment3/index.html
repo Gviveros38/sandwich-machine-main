@@ -27,16 +27,42 @@
         font-size: 40px;
         font-weight: 900;
         color: rgb(10, 41, 221);
-        margin-left: 500px;
+        margin-left: 350px;
         width: 75%;
         border: 5px solid green;
         padding: 25px;
         background-color: rgb(217, 255, 0);
     }
-    div.instructions{
-        margin-left: 800px;
-        
-     }
+    button.dollar{
+        background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  font-size: 25px; 
+  border-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  
+    }
+    .buttongroup{
+        background-color: #04AA6D; /* Green background */
+  border: 5px solid green; /* Green border */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  font-size: 25px; 
+  border-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  font-weight: bold;
+    }
+    .powerbuttons{
+        font-size: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
     
 </style>
   <body class="bg-light">
@@ -53,11 +79,64 @@
           <h2>Welcome 2 The Sandwich Maker Machine!</h2>
         </div>
         <div class="instructions">
-            <p class="lead">
+            <h1 class="lead" style = "font-size: xxlarge; margin-left: 400px;" >
                 Follow the instructions on the screen:
-              </p>
+            </h1>
         </div>
-        
+
+        <div class = "cashier"style="padding: 50px; width: 250px; background-color: chocolate;float: left; padding-right: 10px;" >
+            <h1 class="cash" style="color: yellow;">
+                Cashier
+            </h1>
+            <div class="buttongrp" >
+                <button class="dollar" >
+                    $1  
+                </button>
+                <button class="dollar" >
+                    $0.5
+                </button>
+                <button class="dollar" >
+                    $0.25
+                </button>
+                <button class="dollar" >
+                    $0.10
+                </button>
+                <button class="dollar" >
+                    $0.05
+                </button>
+            </div>
+            <img src="assets/brand/vendingcloseup.jpg" alt="" width="150" height="144" style="padding-top: 30px; padding-left: 20px;">
+            <p style="font-size: 25px;background-color: chocolate ;color: aliceblue;">
+                Please take your change!
+            </p>
+        </div>
+        <div class="Themachine" style="padding-left: 400px; width: 120%; padding-top: 75px;">
+            <img src="assets/brand/21-218696_sandwich-half-3-clip-art-at-clker-sandwich-clipart.png" alt="" style="padding-bottom: 20px;">
+
+            <div class="buttongroup" style="padding-left: 200px;padding-top: 20px;padding-bottom: 20px;">
+                <button class="sandsize" style="font-size: xx-large;">
+                    Small
+                </button>
+                <button class="sandsize"style="font-size: xx-large;">
+                    Medium
+                </button>
+                <button class="sandsize"style="font-size: xx-large;">
+                    Large
+                </button>
+            </div>
+
+        </div>
+        <div class="operations" style="padding-left: 600px;padding-top: 75px; padding-bottom: 100px;width: 150%;">
+            <button class="powerbuttons" style="color: rgb(255, 255, 255); background-color: crimson;">
+                Off
+            </button>
+            <button class="powerbuttons" style="margin-left: 25px; margin-right: 25px; margin-top: 30px; background-color:rgb(49, 236, 2); ">
+                Start
+            </button>
+            <button class="powerbuttons" style="color: rgb(255, 255, 255); background-color: blueviolet;">
+                Report
+            </button>
+        </div>
         
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
